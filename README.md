@@ -1,6 +1,6 @@
 1. `> gh repo clone https://www.github.com/hacker-DOM/fuzz-template`
 
-2. Copy `woke_tests` and `pyproject.toml` into your own repository
+2. Copy `woke_tests`, `justfile` `pyproject.toml` into your own repository
 
 ```zsh
 function doms_fuzz_template() {
