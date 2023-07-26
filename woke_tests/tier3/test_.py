@@ -21,7 +21,9 @@ def tx_callback(tx: TransactionAbc):
         f.write(f",,,{tx.block_number},{tx.from_},{tx.to},{tx.return_value},{tx.events},{tx.console_logs}\n")
 
 @default_chain.connect()
+@on_revert(on_revert_handler)
 def test():
+    default_chain.tx_callback = tx_callback
     # print('SEQUENCES_COUNT', SEQUENCES_COUNT)
     # print('FLOWS_COUNT', FLOWS_COUNT)
     Issues().run(
