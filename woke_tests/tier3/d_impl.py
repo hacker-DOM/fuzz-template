@@ -1,4 +1,3 @@
-from woke_tests.common import *
 from .c_hooks import *
 
 class Impl(Hooks):

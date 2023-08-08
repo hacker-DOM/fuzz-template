@@ -1,4 +1,3 @@
-from woke_tests.common import *
 from .g_issues import *
 
 # pyright: basic
