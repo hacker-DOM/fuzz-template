@@ -2,6 +2,11 @@
 # https://github.com/casey/just
 # Also `brew install just`
 
+# It seems that on MacOS, just will use `zsh` to run commands (recipes).
+# I think it uses the system's default shell. To make sure it's consistent,
+# let's set it explicitly.
+set shell := ["zsh", "-c"]
+
 # Run `just f` to fuzz this project! :-)
 alias f := fuzz
 
